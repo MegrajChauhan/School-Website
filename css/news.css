@@ -1,0 +1,39 @@
+.p{
+    width: 100%;
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+}
+
+.form{
+    width: 100%;
+    height: fit-content;
+}
+
+form{
+    width: 40%;
+    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+form .part{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+form .part div{
+    margin: 1rem;
+}
+
+form input{
+    padding: 5px;
+}
+
+form button{
+    padding: 5px;
+}

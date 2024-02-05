@@ -1,0 +1,32 @@
+.reference{
+    width: 100%;
+    height: fit-content;
+}
+
+.reference h1{
+    text-align: center;
+}
+
+.reference .page{
+    width: 60%;
+    height: fit-content;
+    padding: 10rem;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-shadow{
+    box-shadow: 5px 6px 20px gray;
+}
+
+.page-one{
+    text-align: center !important;
+}
+
+h4{
+    text-align: center;
+}

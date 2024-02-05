@@ -1,0 +1,270 @@
+/* hero section */
+.hero {
+    width: 100%;
+    height: fit-content;
+    padding: 18rem;
+    background-color: lightseagreen;
+    color: white;
+}
+
+.hero h3 {
+    text-align: center;
+    width: fit-content;
+}
+
+.hero p {
+    text-align: center;
+    padding: 12px;
+}
+
+/* our-ideal */
+.our-ideals {
+    width: 100%;
+    height: fit-content;
+    margin: 2rem 0 2rem 0;
+}
+
+.our-ideals h2 {
+    width: fit-content;
+    margin-bottom: 1.9rem;
+}
+
+.ideal {
+    width: 100%;
+    display: flex;
+    height: 25rem;
+}
+
+.ideal img {
+    width: 50%;
+    height: 100%;
+}
+
+.ideal .ideal-desc {
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.ideal-one .ideal-desc {
+    background-image: url('../img/IDEALIMG/ideal-one-left.webp');
+    position: relative;
+}
+
+.ideal-one .ideal-desc::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+
+.ideal-two .ideal-desc {
+    background-image: url('../img/IDEALIMG/ideal-two-left.webp');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ideal-two .ideal-desc::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #8f8b8b;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+
+.ideal-three .ideal-desc {
+    background-image: url('../img/IDEALIMG/ideal-three-left.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ideal-three .ideal-desc::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+
+.ideal-four .ideal-desc {
+    background-image: url('../img/IDEALIMG/ideal-four-left.webp');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ideal-four .ideal-desc::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: lightseagreen;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+
+/* our identity */
+.iden {
+    width: fit-content;
+}
+
+.our-identity {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    margin-top: 1rem;
+    padding: 30px;
+}
+
+.identity {
+    width: 50%;
+    height: fit-content;
+}
+
+.identity img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+
+.iden-para {
+    text-align: center;
+    padding: 20px;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.iden-para h3::before {
+    content: '';
+    width: 2px;
+    height: 5rem;
+    background-color: #8f8b8b;
+    position: absolute;
+    top: 0;
+    transform: translatey(-70%);
+    left: 50%;
+}
+
+/* our history */
+.history{
+    width: 80%;
+    height:fit-content;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.history h2{
+    margin-bottom: 1rem;
+}
+
+/* principle's speech */
+
+.speech{
+    width: 80%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: limegreen;
+    color: darkslategray;
+}
+
+.speech h2{
+    width: fit-content;
+}
+
+.speech img{
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+}
+
+.two-words{
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+}
+
+.two-words::after{
+    content: '';
+    background-image: url('../img/quote.png');
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+    filter: invert(100%);
+    transform:scaleX(-1);
+    height: 3rem;
+    width: 3rem;
+    z-index: -2;
+}
+
+/* responsiveness */
+
+@media screen and (max-width:1160px) {
+    .hero{
+        padding: 16rem;
+    }
+
+    .ideal{
+        height: 20rem;
+    }
+
+    .identity img{
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .hero{
+        padding: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero div{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .hero{
+        padding: 10rem;
+    }
+    .hero div{
+        width:70%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .ideal{
+        height: 18rem;
+    }
+}

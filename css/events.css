@@ -1,0 +1,35 @@
+.events{
+    width: 100%;
+    height: fit-content;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.events h2{
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.event-list{
+    width: 100%;
+    height: fit-content;
+}
+
+.event-list .one, .two,.three{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.event{
+    width: fit-content;
+    height: fit-content;
+    padding: 4rem;
+    margin: 3rem;
+}
+
+.event *{
+    margin: 8px;
+    text-align: center;
+}

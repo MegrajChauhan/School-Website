@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/news.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="top-header">
+                <div class="top-left">
+                    <ul>
+                        <li class="link font-links font-large main-link"><a href="news.html">Admission</a></li>
+                        <li class="link font-links font-large main-link"><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="top-right">
+                    <ul>
+                        <li class="link font-links font-large main-link"><a href="gallary.html">Gallary</a></li>
+                        <li class="link font-links font-large main-link"><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="bottom-left">
+                    <ul>
+                        <li class="link font-links font-large main-link"><a href="home.html">Home</a></li>
+                        <li class="link font-links font-large main-link"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-right">
+                    <ul>
+                        <li class="link font-links font-large main-link"><a href="contact.html">Contact</a></li>
+                        <li class="link font-links font-large main-link"><a href="reference.html">Reference</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+    </div>
+    <h2 class="title title-font services-sp bold posi-rel topic posi-center p">Join our family</h2>
+    <div class="form">
+        <form class="box-shadow">
+            <div class="part-one part">
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">First Name:</h4>
+                    <input type="text" placeholder="Your First Name...." id="fname" class="fname-field">
+                </div>
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">Last Name:</h4>
+                    <input type="text" placeholder="Your Last Name...." id="lname" class="lname-field">
+                </div>
+            </div>
+            <div class="part part-two">
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">Age:</h4>
+                    <input type="number" style="appearance: textfield;" placeholder="Your Age...." id="age" class="age-field">
+                </div>
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">Date of Birth:</h4>
+                    <input type="date" id="dob" class="dob-field">
+                </div>
+            </div>
+            <div class=" part part-three">
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">Phone Number:</h4>
+                    <input type="number" style="appearance: textfield;" placeholder="Your Phone Number...." id="numb" class="numb-field">
+                </div>
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">Email:</h4>
+                    <input type="email" placeholder="Your Correct Email...." id="email" class="mail-field">
+                </div>
+            </div>
+            <div class="part part-four">
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">Sex:</h4>
+                    <input type="radio" name="gend" id="sex" class="sex-field" value="Male">Male
+                    <input type="radio" id="sex"  name="gend" class="sex-field" value="Female">Female
+                    <input type="radio" id="sex" name="gend" class="sex-field" value="other">Other
+                </div>
+                <div>
+                    <h4 class="extra-font-2 bold font-small sub-topic">Faculty:</h4>
+                    <input type="radio" name="fac" id="fac" class="fac-field" value="civil">Civil
+                    <input type="radio" id="fac"  name="fac" class="fac-field" value="science">Science
+                    <input type="radio" id="fac" name="fac" class="fac-field" value="arts">Fine Arts
+                    <input type="radio" id="fac" name="fac" class="fac-field" value="law">Law
+                    <input type="radio" id="fac" name="fac" class="fac-field" value="comm">Commerce
+                </div>
+            </div>
+            <div class="para">
+                <p class="service-desc extra-font para font-medium">*Please provide valid information. Once the form has been accepted, we will contact you through the information you provided*</p>
+            </div>
+            <div class="btn">
+                <input type="button" value="Submit" onclick="handle(this)">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="info">
+            <img src="../img/logo.png" alt="School logo" class="scl-logo">
+            <div class="details">
+                <strong class="font-medium desc-font scl-name">Panchayat Secondary School</strong>
+                <address class="font-medium extra-font addr">Pathari-sanischare 2, Morang</address>
+                <p>
+                    <em class="font-small extra-font-2">021-xxxxxxx</em>
+                    <em class="font-small extra-font-2">021-xxxxxxx</em>
+                </p>
+            </div>
+        </div>
+        <div class="other-links">
+            <ul>
+                <li><a href="home.html" class="font-links font-medium main-link">Home</a></li>
+                <li><a href="about.html" class="font-links font-medium main-link">About</a></li>
+                <li><a href="contact.html" class="font-links font-medium main-link">Contact Us</a></li>
+                <li><a href="events.html" class="font-links font-medium main-link">Events</a></li>
+                <li><a href="reference.html" class="font-links font-medium main-link">References</a></li>
+                <li><a href="news.html" class="font-links font-medium main-link">Admission</a></li>
+                <li><a href="services.html" class="font-links font-medium main-link">Services</a></li>
+                <li><a href="gallary.html" class="font-links font-medium main-link">Gallary</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <div class="media">
+            <a href="">
+                <img src="../img/facebook.png" alt="socio icon" class="invert-img social-icon">
+            </a>   
+            <a href="">
+                <img src="../img/twitter.png" alt="socio icon" class="invert-img social-icon">
+            </a>
+            <a href="">
+                <img src="../img/telegram.png" alt="socio icon" class="invert-img social-icon">
+            </a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="font-medium extra-font copy-link scl-name">2023&copy; Panchayat Secondary School</p>
+    </div>
+    <div class="menu_burger">
+        <div class="menu_icon">
+            <img src="../img/menu_burger.png" alt="menu" class="cursor-point invert-img port">
+        </div>
+        <div class="control no-opac">
+            <div class="burger_logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="burger-links">
+                <li><a href="home.html"
+                        class="font-links font-medium main-link underline underline-effect posi-rel">Home</a></li>
+                <li><a href="about.html"
+                        class="font-links font-medium main-link underline underline-effect posi-rel">About</a></li>
+                <li><a href="contact.html"
+                        class="font-links font-medium main-link underline underline-effect posi-rel">Contact
+                        Us</a></li>
+                <li><a href="events.html" class="font-links font-medium main-link underline underline-effect posi-rel">Events</a>
+                </li>
+                <li><a href="reference.html"
+                        class="font-links font-medium main-link underline underline-effect posi-rel">References</a></li>
+                <li><a href="news.html"
+                        class="font-links font-medium main-link underline underline-effect posi-rel">Admission</a>
+                </li>
+                <li><a href="services.html"
+                        class="font-links font-medium main-link underline underline-effect posi-rel">Services</a>
+                </li>
+                <li><a href="gallary.html" class="font-links font-medium main-link underline underline-effect posi-rel">Gallary</a>
+                </li>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/main.js">
+</script>
+</html>

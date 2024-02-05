@@ -1,0 +1,446 @@
+/* hero section */
+
+:root {
+    --head-posi: 10%;
+}
+
+.hero {
+    width: 100%;
+    height: 42rem;
+    background-image: url('../img/imgs/school_front11.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid black;
+    margin-bottom: 5rem;
+}
+
+.hero::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    z-index: 100;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0rem;
+    text-align: center;
+}
+
+.hero-content div {
+    width: 100%;
+    height: fit-content;
+}
+
+.subtitle p {
+    border-bottom: 1px solid white;
+    display: inline;
+}
+
+.ph-numb {
+    display: flex;
+}
+
+.numb1 {
+    text-align: right;
+    margin-right: 2px;
+}
+
+.numb2 {
+    text-align: left;
+    margin-left: 2px;
+}
+
+.numb1 strong,
+.numb2 strong {
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 10px;
+}
+
+.ph-numb div img {
+    height: 1rem;
+    width: 1rem;
+    filter: invert(100%);
+}
+
+.contact-extra .learn-more {
+    margin: 8px;
+    padding: 2px;
+}
+
+.contact-extra .learn-more input {
+    padding: 8px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-extra .learn-more input:hover {
+    background-color: blue;
+    transition: background-color 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.jump-to {
+    border-bottom: 1px solid white;
+    display: inline;
+}
+
+.jump-to:hover {
+    border-bottom: 1px solid rgb(67, 54, 255);
+    transition: border-bottom 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* The floating images section */
+
+
+.float-1 {
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
+    height: 22rem;
+    z-index: 300;
+    width: 4rem;
+}
+
+.float-imgs {
+    height: 100%;
+    width: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.float-img-1 {
+    height: 100%;
+    width: 4rem;
+    background-image: url('../img/biology.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: lightseagreen;
+}
+
+.float-2 {
+    position: absolute;
+    top: 26rem;
+    left: 8rem;
+    height: 16rem;
+    z-index: 300;
+    width: 4rem;
+}
+
+.float-img-2 {
+    height: 100%;
+    width: 4rem;
+    background-image: url('../img/books.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: coral;
+}
+
+.float-3 {
+    position: absolute;
+    top: 17rem;
+    left: 15rem;
+    height: 25rem;
+    z-index: 300;
+    width: 4rem;
+}
+
+.float-img-3 {
+    height: 100%;
+    width: 4rem;
+    background-image: url('../img/globe.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: darkkhaki;
+}
+
+.float-4 {
+    position: absolute;
+    top: 23rem;
+    right: 3rem;
+    height: 19rem;
+    z-index: 300;
+    width: 4rem;
+}
+
+.float-img-4 {
+    height: 100%;
+    width: 4rem;
+    background-image: url('../img/handshake.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: fuchsia;
+}
+
+.float-5 {
+    position: absolute;
+    top: 16rem;
+    right: 11rem;
+    height: 26rem;
+    z-index: 300;
+    width: 4rem;
+}
+
+.float-img-5 {
+    height: 100%;
+    width: 4rem;
+    background-image: url('../img/medal.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: honeydew;
+}
+
+.float-6 {
+    position: absolute;
+    top: 29rem;
+    right: 19rem;
+    height: 13rem;
+    z-index: 300;
+    width: 4rem;
+}
+
+.float-img-6 {
+    height: 100%;
+    width: 4rem;
+    background-image: url('../img/science.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: blanchedalmond;
+}
+
+/* the welcome section */
+
+.welcome {
+    width: 80%;
+    text-align: center;
+    height: fit-content;
+}
+
+.welcome h3 {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0.6rem;
+    position: relative;
+}
+
+.welcome p {
+    text-align: justify;
+    padding: 12px;
+}
+
+/* why choose us? */
+.why-choose-us {
+    margin-top: 5rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.why-choose-us h3 {
+    position: relative;
+    width: fit-content;
+}
+
+.reasons {
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+}
+
+.reason {
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 2rem !important;
+}
+
+.content {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+
+.reason .content h3 {
+    width: 35%;
+    text-align: justify;
+    align-self: center;
+}
+
+.reason-expl {
+    width: 65%;
+    text-align: justify;
+}
+
+.reason-expl .read-more {
+    width: fit-content;
+}
+
+.imgs {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.reason-img {
+    width: 33.33%;
+    height: 15rem;
+    margin: 5px;
+    background-size: contain;
+}
+
+/* glimpse on us */
+
+.a-glimpse-on-us {
+    width: 100%;
+    height: fit-content;
+    margin-top: 4rem;
+}
+
+.a-glimpse-on-us h3 {
+    width: fit-content;
+    height: fit-content;
+}
+
+.points {
+    width: 100%;
+    margin-top: 2rem;
+    height: fit-content;
+}
+
+.point {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 3rem;
+    display: flex;
+    background-color: rgb(248, 246, 246);
+}
+
+.expl {
+    width: 50%;
+    height: fit-content;
+    padding: 3rem;
+}
+
+.expl h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.expl .point-desc {
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+}
+
+.point-desc div {
+    width: fit-content;
+}
+
+.img {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 100%;
+    height: 20rem;
+    background-size: contain;
+}
+
+/* responsiveness */
+@media screen and (max-width:1180px) {
+
+    .float-1,
+    .float-2,
+    .float-3,
+    .float-4,
+    .float-5,
+    .float-6,
+    .float-img-1,
+    .float-img-2,
+    .float-img-3,
+    .float-img-4,
+    .float-img-5,
+    .float-img-6 {
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width:1160px) {
+    .float-1,
+    .float-2,
+    .float-3,
+    .float-4,
+    .float-5,
+    .float-6,
+    .float-img-1,
+    .float-img-2,
+    .float-img-3,
+    .float-img-4,
+    .float-img-5,
+    .float-img-6 {
+        display: none;
+    }
+
+    .img img{
+      width: 90%;
+      height: 18rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .welcome{
+      width: 85%;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .imgs .remove{
+        display: none;
+    }
+
+    .imgs img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .reason{
+        width: 100% !important;
+    }
+
+    .reason .content h3{
+        text-align: left !important;
+        width: 40%;
+    }
+
+    .reason-expl{
+        width: 60%;
+        padding: 12px;
+    }
+
+    .img img{
+        height: 16rem;
+    }
+}
