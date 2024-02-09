@@ -46,13 +46,7 @@ function handle(Event) {
     x.reset();
 }
 
-document.body.style.overflow = "hidden";
-
 window.onload = animate();
-setTimeout(() => {
-    document.body.style.overflow = "unset";
-}, 2000);
-
 window.onload = window.scrollTo(0, 0);
 
 function handleGalClick(cls_name) {
